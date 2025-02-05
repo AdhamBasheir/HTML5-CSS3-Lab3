@@ -1,0 +1,29 @@
+div {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    align-content: center;
+    font-size: 60px;
+}
+
+div.parent {
+    margin: 200px auto;
+    transition-duration: 6s;
+    transform-style: preserve-3d;
+}
+
+div.parent:hover {
+    transform: rotateY(180deg) perspective(300px);
+}
+
+div.child1 {
+    position: absolute;
+    background-color: red;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+div.child2 {
+    background-color: cyan;
+    transform: rotateY(180deg);
+}
